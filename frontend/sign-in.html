@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - SmartDormX</title>
+    <link rel="stylesheet" href="sign-in.css">
+    
+</head>
+<body>
+
+    <div class="login-container">
+        <h1><i>SmartDorm ----- X</i></h1>
+        <p class="subtitle">Enter your credentials to continue</p>
+
+        <div id="errorMsg" class="alert alert-error"></div>
+        <div id="successMsg" class="alert alert-success"></div>
+
+        <form id="loginForm" onsubmit="return false;">
+            <div class="form-group">
+                <label for="usernameField">Username</label>
+                <input type="text" id="usernameField" placeholder="Enter your username" autocomplete="username">
+            </div>
+
+            <div class="form-group">
+                <label for="passwordField">Password</label>
+                <div class="password-wrapper">
+                    <input type="password" id="passwordField" placeholder="Enter your password" autocomplete="current-password">
+                    <button type="button" class="eye-btn" id="eyeBtn">
+                        <svg id="eyeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                            <circle cx="12" cy="12" r="3"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="options">
+                <label class="remember-me">
+                    <input type="checkbox" id="rememberMe">
+                    <span>Remember me</span>
+                </label>
+                <a href="#" class="forgot-link" id="forgotLink">Forgot password?</a>
+            </div>
+
+            <button type="button" class="sign-in-btn" id="loginBtn">
+                <span class="spinner" id="btnSpinner"></span>
+                <span id="btnText">Sign In</span>
+            </button>
+        </form>
+    </div>
+
+    <!-- Forgot Password Modal -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <h3>Forgot Password?</h3>
+            <p>Please contact the administrator to reset your password:</p>
+            
+            <div class="contact-info">
+                <strong>Ijaz Khan</strong>
+                <span>LMS Office - SmartDormX Administrator</span>
+            </div>
+
+            <div class="modal-buttons">
+                <button class="btn-cancel" id="closeModal">Cancel</button>
+                <button class="btn-ok" id="okModal">OK</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="sign-in.js"></script>
+</body>
+</html>

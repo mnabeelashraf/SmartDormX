@@ -1,0 +1,7 @@
+flask==3.0.0
+flask-cors==4.0.0
+opencv-python==4.8.1.78
+dlib @ file:///D:/01%20-%20Downloads/dlib-19.22.99-cp310-cp310-win_amd64.whl
+face-recognition==1.3.0
+numpy==1.24.3
+Werkzeug==3.0.0
