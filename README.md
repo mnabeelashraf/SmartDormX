@@ -269,33 +269,33 @@ MJPEG Stream → Admin Browser (3-second auto-refresh)
 
 | Dashboard | Face Recognition Live Feed |
 |-----------|---------------------------|
-| ![Dashboard](assets/screenshots/admin-dashboard.png) | ![Face Recognition](assets/screenshots/face-recognition.png) |
+| ![Dashboard](assets/admin-dashboard.png) | ![Face Recognition](assets/face-recognition.png) |
 
 | Residents Management | Fee Management |
 |---------------------|----------------|
-| ![Residents](assets/screenshots/residents.png) | ![Fee](assets/screenshots/fee-management.png) |
+| ![Residents](assets/residents.png) | ![Fee](assets/fee-management.png) |
 
 | Mess Management | Requests |
 |----------------|----------|
-| ![Mess](assets/screenshots/mess.png) | ![Requests](assets/screenshots/requests.png) |
+| ![Mess](assets/mess.png) | ![Requests](assets/requests.png) |
 
 | Announcements |
 |---------------|
-| ![Announcements](assets/screenshots/announcements.png) |
+| ![Announcements](assets/announcements.png) |
 
 ### Student Portal
 
 | Student Dashboard | My Profile |
 |------------------|------------|
-| ![Student Dashboard](assets/screenshots/student-dashboard.png) | ![Profile](assets/screenshots/student-profile.png) |
+| ![Student Dashboard](assets/student-dashboard.png) | ![Profile](assets/student-profile.png) |
 
 | My Room | My Fee |
 |---------|--------|
-| ![Room](assets/screenshots/student-room.png) | ![Fee](assets/screenshots/student-fee.png) |
+| ![Room](assets/student-room.png) | ![Fee](assets/student-fee.png) |
 
 | Mess and Dining | Notifications |
 |----------------|---------------|
-| ![Mess](assets/screenshots/student-mess.png) | ![Notifications](assets/screenshots/student-notifications.png) |
+| ![Mess](assets/student-mess.png) | ![Notifications](assets/student-notifications.png) |
 
 ---
 
