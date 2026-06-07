@@ -237,7 +237,7 @@ MJPEG Stream → Admin Browser (3-second auto-refresh)
 
 | Metric | Result |
 |--------|--------|
-| Dataset Size | 22 individuals, ~148 images |
+| Dataset Size | 30+ individuals, ~1000+ images |
 | Recognition Speed | 1–2 seconds per face (CPU-only) |
 | Operating Range | Up to 5 metres |
 | Video Stream | ~25 FPS MJPEG |
@@ -245,7 +245,7 @@ MJPEG Stream → Admin Browser (3-second auto-refresh)
 | Recall | ~80% |
 | F1 Score | ~80% |
 | True Negative Rate | 100% (unknown persons always rejected) |
-| Total Events Logged | 247+ recognition events |
+| Total Events Logged | 1000+ recognition events |
 | Anomaly Rate | ~15% of all events |
 
 ### Performance vs Literature Benchmark
