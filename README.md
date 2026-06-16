@@ -496,8 +496,8 @@ SmartDormX uses a Hybrid Dual-Database Architecture:
 ### 🚀 Future Enhancements
 High Priority
 
- Liveness detection and anti-spoofing (Silent-Face-Anti-Spoofing CNN)
- GPU-accelerated recognition (CUDA dlib or InsightFace ArcFace)
+ * Liveness detection and anti-spoofing (Silent-Face-Anti-Spoofing CNN)
+ * GPU-accelerated recognition (CUDA dlib or InsightFace ArcFace)
  Full student-administrator portal database integration
  Real-time SMS and email alerts (Twilio + SendGrid)
 Medium Priority
