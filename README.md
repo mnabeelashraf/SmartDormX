@@ -408,7 +408,7 @@ Student Portal	| http://127.0.0.1:5500/student-portal/sign-in.html
 Flask API	| http://localhost:5000
 
 📁 Project Structure
-
+```
 SmartDormX/
 │
 ├── backend/                        # Flask backend
@@ -447,6 +447,7 @@ SmartDormX/
 ├── requirements.txt                # Python dependencies
 ├── LICENSE                         # MIT License
 └── README.md                       # This file
+```
 🗄️ Database Architecture
 SmartDormX uses a Hybrid Dual-Database Architecture:
 
