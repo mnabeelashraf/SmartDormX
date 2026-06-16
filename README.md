@@ -6,22 +6,22 @@
 
 <br/>
 
-!Python
-!Flask
-!OpenCV
-!Supabase
-!JavaScript
+![Python](https://img.shields.io/badge/Python-3.10-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-3.0.0-000000?style=for-the-badge&logo=flask&logoColor=white)
+![OpenCV](https://img.shields.io/badge/OpenCV-4.8.1-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-PostgreSQL-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
 <br/>
 
->**Final Year Project — BS Computer Science**
-> Pak-Austria Fachhochschule: Institute of Applied Sciences & Technology (PAF-IAST)
+> **Final Year Project — BS Computer Science**  
+> Pak-Austria Fachhochschule: Institute of Applied Sciences & Technology (PAF-IAST)  
 > Batch: Fall 2022 – 2026 | Submitted: May 04, 2026
 
 <br/>
 
-🖥️**Local Deployment** — Production-ready prototype, locally validated
-📄**Research Paper** — Prepared in IEEE Access format · arXiv submission in progress
+🖥️ **Local Deployment** — Production-ready prototype, locally validated  
+📄 **Research Paper** — Prepared in IEEE Access format · arXiv submission in progress
 
 </div>
 
@@ -29,38 +29,38 @@
 
 ## 📌 Table of Contents
 
-- Overview
-- The Problem
-- Our Solution
-- System Architecture
-- Key Features
-- Technology Stack
-- Performance Results
-- Screenshots
-- Demo Video
-- Installation Guide
-- Project Structure
-- Database Architecture
-- API Reference
-- Challenges and Solutions
-- Future Enhancements
-- Team
-- Supervisor
-- License
+- [Overview](#-overview)
+- [The Problem](#-the-problem)
+- [Our Solution](#-our-solution)
+- [System Architecture](#-system-architecture)
+- [Key Features](#-key-features)
+- [Technology Stack](#-technology-stack)
+- [Performance Results](#-performance-results)
+- [Screenshots](#-screenshots)
+- [Demo Video](#-demo-video)
+- [Installation Guide](#-installation-guide)
+- [Project Structure](#-project-structure)
+- [Database Architecture](#-database-architecture)
+- [API Reference](#-api-reference)
+- [Challenges and Solutions](#-challenges-and-solutions)
+- [Future Enhancements](#-future-enhancements)
+- [Team](#-team)
+- [Supervisor](#-supervisor)
+- [License](#-license)
 
 ---
 
 ## 🔍 Overview
 
 **SmartDormX** is an integrated smart hostel management and security system that combines
-**AI-powered face recognition** with a**comprehensive web-based administration platform**.
+**AI-powered face recognition** with a **comprehensive web-based administration platform**.
 
 The system was designed, developed, and empirically validated as a Final Year Project at
 Pak-Austria Fachhochschule (PAF-IAST) to address a genuine institutional challenge —
 the absence of an intelligent, automated, and integrated hostel security and management solution.
 
-SmartDormX operates entirely on**standard consumer CPU hardware** with**no GPU requirement**,
-using**100% open-source technologies** and**zero-cost infrastructure**,
+SmartDormX operates entirely on **standard consumer CPU hardware** with **no GPU requirement**,
+using **100% open-source technologies** and **zero-cost infrastructure**,
 making it practically deployable in resource-constrained institutional environments.
 
 ---
@@ -103,103 +103,60 @@ SmartDormX delivers an end-to-end integrated platform with two core subsystems:
 ---
 
 ## 🏗️ System Architecture
-```
-
 ┌─────────────────────────────────────────────────────────────┐
-
 │ PRESENTATION LAYER │
-
 │ Admin Portal (HTML/CSS/JS) + Student Portal │
-
 └────────────────────┬────────────────────────────────────────┘
-
 │ REST API + Supabase JS Client
-
 ┌────────────────────▼────────────────────────────────────────┐
-
 │ APPLICATION LAYER │
-
 │ Flask Backend (app.py) + REST API │
-
 │ Camera Recognition Thread │
-
 └──────────┬─────────────────────────┬───────────────────────┘
-
 │ │
-
 ┌──────────▼──────────┐ ┌──────────▼──────────────────────┐
-
 │ AI PROCESSING │ │ DATA LAYER │
-
 │ LAYER │ │ │
-
 │ - HOG Detector │ │ SQLite (local recognition log) │
-
 │ - dlib ResNet │ │ Supabase PostgreSQL (cloud) │
-
 │ - AnomalyDetector │ │ Local image storage (/images) │
-
 └─────────────────────┘ └──────────────────────────────────┘
 
-```
+text
+
+
 ### End-to-End Recognition Flow
-```
-
 Camera Frame
-
 │
-
 ▼
-
 HOG Face Detection
-
 │
-
 ▼
-
 dlib ResNet 128-d Encoding
-
 │
-
 ▼
-
 Euclidean Distance Matching (threshold: 0.60)
-
 │
-
 ├── Match Found (confidence ≥ 45%) → AUTHORIZED
-
 │
-
 └── No Match → UNKNOWN → UNAUTHORIZED
-
 │
-
 ▼
-
 AnomalyDetector.detect(name, confidence)
-
 │
-
 ├── Rule 1: Unknown Person → HIGH severity
-
 ├── Rule 2: Near-miss low confidence → MEDIUM severity
-
 └── Rule 3: Hour 00:00–05:00 → MEDIUM severity
-
 │
-
 ▼
-
 SQLite Log Entry (5-second cooldown)
-
 │
-
 ▼
-
 MJPEG Stream → Admin Browser (3-second auto-refresh)
 
-```
+text
+
+
 ---
 
 ## ✨ Key Features
@@ -346,33 +303,33 @@ MJPEG Stream → Admin Browser (3-second auto-refresh)
 
 | Dashboard | Face Recognition Live Feed |
 |-----------|---------------------------|
-| !Dashboard | !Face Recognition |
+| ![Dashboard](assets/admin-dashboard.png) | ![Face Recognition](assets/face-recognition.png) |
 
 | Residents Management | Fee Management |
 |---------------------|----------------|
-| !Residents | !Fee |
+| ![Residents](assets/residents.png) | ![Fee](assets/fee-management.png) |
 
 | Mess Management | Requests |
 |----------------|----------|
-| !Mess | !Requests |
+| ![Mess](assets/mess.png) | ![Requests](assets/requests.png) |
 
 | Announcements |
 |---------------|
-| !Announcements |
+| ![Announcements](assets/announcements.png) |
 
 ### Student Portal
 
 | Student Dashboard | My Profile |
 |------------------|------------|
-| !Student Dashboard | !Profile |
+| ![Student Dashboard](assets/student-dashboard.png) | ![Profile](assets/student-profile.png) |
 
 | My Room | My Fee |
 |---------|--------|
-| !Room | !Fee |
+| ![Room](assets/student-room.png) | ![Fee](assets/student-fee.png) |
 
 | Mess and Dining | Notifications |
 |----------------|---------------|
-| !Mess | !Notifications |
+| ![Mess](assets/student-mess.png) | ![Notifications](assets/student-notifications.png) |
 
 ---
 
@@ -405,76 +362,57 @@ MJPEG Stream → Admin Browser (3-second auto-refresh)
 ```bash
 git clone https://github.com/mnabeelashraf/SmartDormX.git
 cd SmartDormX
-```
-
-### **Step 2 — Create Virtual Environment**
-
-```
+Step 2 — Create Virtual Environment
 Bash
+
 python -m venv fr_env_new
 fr_env_new\Scripts\activate
-```
-
-### **Step 3 — Install dlib (Windows Critical Step)**
-
+Step 3 — Install dlib (Windows Critical Step)
 dlib must be installed from a pre-compiled wheel on Windows with Python 3.10.
 
 Download the wheel file:
-
-**`dlib-19.22.99-cp310-cp310-win_amd64.whl`**
+dlib-19.22.99-cp310-cp310-win_amd64.whl
 
 Then install:
 
-```
+Bash
+
 pip install path\to\dlib-19.22.99-cp310-cp310-win_amd64.whl
-```
+Step 4 — Install All Dependencies
+Bash
 
-### **Step 4 — Install All Dependencies**
-
-```
 pip install -r requirements.txt
-```
+Step 5 — Configure Supabase
+Open frontend/supabase-config.js and replace with your credentials:
 
-### **Step 5 — Configure Supabase**
+JavaScript
 
-Open **`frontend/supabase-config.js`** and replace with your credentials:
-
-```
 const SUPABASE_URL = 'your-supabase-project-url';
 const SUPABASE_ANON_KEY = 'your-supabase-anon-key';
-```
+Open student-portal/student-supabase-config.js and do the same.
 
-Open **`student-portal/student-supabase-config.js`** and do the same.
+Step 6 — Start the Backend
+Bash
 
-### **Step 6 — Start the Backend**
-
-```
 cd backend
 python app.py
-```
-
 Expected output:
 
-```
+text
+
 [INFO] Starting Smart Hostel Management System - Version 6
 [INFO] Access frontend at http://localhost:5000
 [INFO] Upload folder: .../backend/images
 [INFO] Bulk upload folder: .../backend/bulk_upload
-```
-
-### **Step 7 — Open the Frontend**
-
+Step 7 — Open the Frontend
 Use VS Code Live Server to serve the frontend.
 
-| **Portal** | **URL** |
-| --- | --- |
-| Admin Portal | **http://127.0.0.1:5500/frontend/sign-in.html** |
-| Student Portal | **http://127.0.0.1:5500/student-portal/sign-in.html** |
-| Flask API | **http://localhost:5000** |
-
----
-
-## **📁 Project Structure**
+Portal	URL
+Admin Portal	http://127.0.0.1:5500/frontend/sign-in.html
+Student Portal	http://127.0.0.1:5500/student-portal/sign-in.html
+Flask API	http://localhost:5000
+📁 Project Structure
+text
 
 SmartDormX/
 │
@@ -513,11 +451,11 @@ SmartDormX/
 ├── assets/                         # Screenshots for README
 ├── requirements.txt                # Python dependencies
 ├── LICENSE                         # MIT License
-└── README.md                       # This fil
+└── README.md                       # This file
+🗄️ Database Architecture
+SmartDormX uses a Hybrid Dual-Database Architecture:
 
-## **🗄️ Database Architecture**
-
-SmartDormX uses a **Hybrid Dual-Database Architecture**:
+text
 
 ┌─────────────────────────────┐    ┌──────────────────────────────────┐
 │     SQLite (Local)          │    │    Supabase PostgreSQL (Cloud)    │
@@ -534,118 +472,75 @@ SmartDormX uses a **Hybrid Dual-Database Architecture**:
 │  event logging              │    │  • requests                       │
 │                             │    │  • dashboard_alerts               │
 └─────────────────────────────┘    └──────────────────────────────────┘
+📡 API Reference
+Endpoint	Method	Description
+/video_feed	GET	Live MJPEG camera stream
+/logs	GET	Recognition logs with filters
+/users	GET	All enrolled students
+/add_user	POST	Register student with images
+/delete_user/<id>	DELETE	Remove student from system
+/import_csv	POST	Bulk import students via CSV
+/stats	GET	System statistics summary
+/user_image/<id>	GET	Retrieve student primary image
+/refresh_logs	POST	Force log refresh
+⚡ Challenges and Solutions
+Challenge	Impact	Solution Applied
+No GPU hardware available	Recognition speed 1–2 sec/face	Reduced resolution to 640×480, capped FPS
+Laptop webcam gave < 50% accuracy	System unusable for security	Switched to iPhone via USB → 81.0% accuracy
+dlib has no pip wheel for Windows + Python 3.10	Installation failure	Used pre-compiled .whl file
+Lighting sensitivity	Accuracy drops below 50% in dim light	Documented requirement for dedicated entry lighting
+Continuous logging of same person	Database flooding	Implemented 5-second per-identity cooldown
+Student and admin portal DB integration	Data not fully synchronized	Identified for Version 2.0 development
+No liveness detection	Spoofing vulnerability	Documented for future implementation
+🚀 Future Enhancements
+High Priority
 
-## **📡 API Reference**
+ Liveness detection and anti-spoofing (Silent-Face-Anti-Spoofing CNN)
+ GPU-accelerated recognition (CUDA dlib or InsightFace ArcFace)
+ Full student-administrator portal database integration
+ Real-time SMS and email alerts (Twilio + SendGrid)
+Medium Priority
 
-| **Endpoint** | **Method** | **Description** |
-| --- | --- | --- |
-| /video_feed | GET | Live MJPEG camera stream |
-| /logs | GET | Recognition logs with filters |
-| /users | GET | All enrolled students |
-| /add_user | POST | Register student with images |
-| /delete_user/<id> | DELETE | Remove student from system |
-| /import_csv | POST | Bulk import students via CSV |
-| /stats | GET | System statistics summary |
-| /user_image/<id> | GET | Retrieve student primary image |
-| /refresh_logs | POST | Force log refresh |
+ Visitor management module
+ Multi-camera and IP/CCTV camera support (RTSP)
+ Automated attendance via face recognition at mess entry
+ Mobile application (React Native or Flutter)
+Low Priority
 
----
-
-## **⚡ Challenges and Solutions**
-
-| **Challenge** | **Impact** | **Solution Applied** |
-| --- | --- | --- |
-| No GPU hardware available | Recognition speed 1–2 sec/face | Reduced resolution to 640×480, capped FPS |
-| Laptop webcam gave < 50% accuracy | System unusable for security | Switched to iPhone via USB → 81.0% accuracy |
-| dlib has no pip wheel for Windows + Python 3.10 | Installation failure | Used pre-compiled .whl file |
-| Lighting sensitivity | Accuracy drops below 50% in dim light | Documented requirement for dedicated entry lighting |
-| Continuous logging of same person | Database flooding | Implemented 5-second per-identity cooldown |
-| Student and admin portal DB integration | Data not fully synchronized | Identified for Version 2.0 development |
-| No liveness detection | Spoofing vulnerability | Documented for future implementation |
-
----
-
-## **🚀 Future Enhancements**
-
-**High Priority**
-
-- [ ]  Liveness detection and anti-spoofing (Silent-Face-Anti-Spoofing CNN)
-- [ ]  GPU-accelerated recognition (CUDA dlib or InsightFace ArcFace)
-- [ ]  Full student-administrator portal database integration
-- [ ]  Real-time SMS and email alerts (Twilio + SendGrid)
-
-**Medium Priority**
-
-- [ ]  Visitor management module
-- [ ]  Multi-camera and IP/CCTV camera support (RTSP)
-- [ ]  Automated attendance via face recognition at mess entry
-- [ ]  Mobile application (React Native or Flutter)
-
-**Low Priority**
-
-- [ ]  Automated PDF report generation
-- [ ]  Machine learning anomaly detection (Isolation Forest)
-- [ ]  Docker containerization for simplified deployment
-- [ ]  Biometric data encryption (AES-256)
-- [ ]  Web-based system configuration panel
-
----
-
-## **👥 Team**
-
-| **Name** | **Roll Number** | **Responsibility** |
-| --- | --- | --- |
-| Muhammad Nabeel Ashraf | B22F1154CS030 | Face Recognition Module · Camera Integration · Anomaly Detection Engine |
-| Fahad Ali | B22F0403CS046 | Hostel Management Dashboard · Database Design · Supabase Integration |
-| Muhammad Uzair Khan | B22F0076CS092 | Student Portal Development · System Integration · Testing and Documentation |
-
----
-
-## **👨‍🏫 Supervisor**
-
-**Dr. Muhammad Shoaib Qureshi**
-
+ Automated PDF report generation
+ Machine learning anomaly detection (Isolation Forest)
+ Docker containerization for simplified deployment
+ Biometric data encryption (AES-256)
+ Web-based system configuration panel
+👥 Team
+Name	Roll Number	Responsibility
+Muhammad Nabeel Ashraf	B22F1154CS030	Face Recognition Module · Camera Integration · Anomaly Detection Engine
+Fahad Ali	B22F0403CS046	Hostel Management Dashboard · Database Design · Supabase Integration
+Muhammad Uzair Khan	B22F0076CS092	Student Portal Development · System Integration · Testing and Documentation
+👨‍🏫 Supervisor
+Dr. Muhammad Shoaib Qureshi
 Assistant Professor
-
 School of Computing Sciences
-
 Pak-Austria Fachhochschule: Institute of Applied Sciences and Technology (PAF-IAST)
 
----
-
-## **🏛️ Institution**
-
+🏛️ Institution
 Pak-Austria Fachhochschule: Institute of Applied Sciences and Technology
-
 Mang, Haripur, Khyber Pakhtunkhwa, Pakistan
+www.paf-iast.edu.pk
 
-**www.paf-iast.edu.pk**
+📄 License
+This project is licensed under the MIT License.
+See the LICENSE file for full details.
 
----
-
-## **📄 License**
-
-This project is licensed under the **MIT License**.
-
-See the **LICENSE** file for full details.
-
----
-
-## **📚 Key References**
-
-- Kortli et al. (2020) — HOG + deep learning encoder for CPU-efficient face recognition
-- Adjabi et al. (2020) — ResNet encoders outperform classical methods on LFW benchmark
-- Chandola et al. (2009) — Rule-based anomaly detection for interpretability
-- King, D.E. (2009) — dlib machine learning toolkit
-- Guo and Zhang (2019) — Survey on deep learning based face recognition
-
----
-
+📚 Key References
+Kortli et al. (2020) — HOG + deep learning encoder for CPU-efficient face recognition
+Adjabi et al. (2020) — ResNet encoders outperform classical methods on LFW benchmark
+Chandola et al. (2009) — Rule-based anomaly detection for interpretability
+King, D.E. (2009) — dlib machine learning toolkit
+Guo and Zhang (2019) — Survey on deep learning based face recognition
 <div align="center">
-
-**SmartDormX** — Built with dedication at PAF-IAST
-
-*Integrating Artificial Intelligence with Institutional Management*
+SmartDormX — Built with dedication at PAF-IAST
+Integrating Artificial Intelligence with Institutional Management
 
 ⭐ If this project helped you — please give it a star
 
