@@ -410,6 +410,7 @@ Use VS Code Live Server to serve the frontend.
 | Student Portal	| http://127.0.0.1:5500/student-portal/sign-in.html |
 | Flask API	| http://localhost:5000 |
 
+---
 ### 📁 Project Structure
 ```
 SmartDormX/
@@ -451,6 +452,8 @@ SmartDormX/
 ├── LICENSE                         # MIT License
 └── README.md                       # This file
 ```
+
+---
 ### 🗄️ Database Architecture
 SmartDormX uses a Hybrid Dual-Database Architecture:
 ```
