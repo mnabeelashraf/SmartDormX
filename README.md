@@ -483,15 +483,17 @@ SmartDormX uses a Hybrid Dual-Database Architecture:
 | /refresh_logs |	POST |	Force log refresh |
 
 ### ⚡ Challenges and Solutions
-Challenge	Impact	Solution Applied
-No GPU hardware available	Recognition speed 1–2 sec/face	Reduced resolution to 640×480, capped FPS
-Laptop webcam gave < 50% accuracy	System unusable for security	Switched to iPhone via USB → 81.0% accuracy
-dlib has no pip wheel for Windows + Python 3.10	Installation failure	Used pre-compiled .whl file
-Lighting sensitivity	Accuracy drops below 50% in dim light	Documented requirement for dedicated entry lighting
-Continuous logging of same person	Database flooding	Implemented 5-second per-identity cooldown
-Student and admin portal DB integration	Data not fully synchronized	Identified for Version 2.0 development
-No liveness detection	Spoofing vulnerability	Documented for future implementation
-🚀 Future Enhancements
+|Challenge |	Impact |	Solution Applied |
+|---|---|---| 
+|No GPU hardware available|	Recognition speed 1–2 sec/face|	Reduced resolution to 640×480, capped FPS|
+|Laptop webcam gave < 50% accuracy|	System unusable for security|	Switched to iPhone via USB → 81.0% accuracy|
+|dlib has no pip wheel for Windows + Python 3.10|	Installation failure|	Used pre-compiled .whl file|
+|Lighting sensitivity|	Accuracy drops below 50% in dim light|	Documented requirement for dedicated entry lighting|
+|Continuous logging of same person|	Database flooding|	Implemented 5-second per-identity cooldown|
+|Student and admin portal DB integration|	Data not fully synchronized|	Identified for Version 2.0 development|
+|No liveness detection|	Spoofing vulnerability|	Documented for future implementation|
+
+### 🚀 Future Enhancements
 High Priority
 
  Liveness detection and anti-spoofing (Silent-Face-Anti-Spoofing CNN)
