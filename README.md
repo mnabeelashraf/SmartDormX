@@ -122,8 +122,6 @@ SmartDormX delivers an end-to-end integrated platform with two core subsystems:
 │ - AnomalyDetector │ │ Local image storage (/images) │
 └─────────────────────┘ └──────────────────────────────────┘
 
-text
-
 
 ### End-to-End Recognition Flow
 Camera Frame
@@ -153,9 +151,6 @@ SQLite Log Entry (5-second cooldown)
 │
 ▼
 MJPEG Stream → Admin Browser (3-second auto-refresh)
-
-text
-
 
 ---
 
@@ -359,7 +354,6 @@ text
 
 ### Step 1 — Clone the Repository
 
-```bash
 git clone https://github.com/mnabeelashraf/SmartDormX.git
 cd SmartDormX
 Step 2 — Create Virtual Environment
