@@ -494,21 +494,22 @@ SmartDormX uses a Hybrid Dual-Database Architecture:
 |No liveness detection|	Spoofing vulnerability|	Documented for future implementation|
 
 ### 🚀 Future Enhancements
-####High Priority
+
+#### High Priority
 
  * Liveness detection and anti-spoofing (Silent-Face-Anti-Spoofing CNN)
  * GPU-accelerated recognition (CUDA dlib or InsightFace ArcFace)
  * Full student-administrator portal database integration
  * Real-time SMS and email alerts (Twilio + SendGrid)
 
-####Medium Priority
+#### Medium Priority
 
 * Visitor management module
 * Multi-camera and IP/CCTV camera support (RTSP)
 * Automated attendance via face recognition at mess entry
 * Mobile application (React Native or Flutter)
 
-####Low Priority
+#### Low Priority
 
 * Automated PDF report generation
 * Machine learning anomaly detection (Isolation Forest)
@@ -516,12 +517,12 @@ SmartDormX uses a Hybrid Dual-Database Architecture:
 * Biometric data encryption (AES-256)
 * Web-based system configuration panel
 
-#### 👥 Team
-|Name	|Roll Number	|Responsibility|
+### 👥 Team
+| Name	| Roll Number	| Responsibility |
 |---|---|
-|Muhammad Nabeel Ashraf	|B22F1154CS030	|Face Recognition Module · Camera Integration · Anomaly Detection Engine|
-|Fahad Ali	|B22F0403CS046	|Hostel Management Dashboard · Database Design · Supabase Integration|
-|Muhammad Uzair Khan|	B22F0076CS092	|Student Portal Development · System Integration · Testing and Documentation|
+| Muhammad Nabeel Ashraf	| B22F1154CS030	| Face Recognition Module · Camera Integration · Anomaly Detection Engine |
+| Fahad Ali	| B22F0403CS046	| Hostel Management Dashboard · Database Design · Supabase Integration |
+| Muhammad Uzair Khan |	B22F0076CS092	| Student Portal Development · System Integration · Testing and Documentation |
 
 ### 👨‍🏫 Supervisor
 Dr. Muhammad Shoaib Qureshi
@@ -544,11 +545,10 @@ See the LICENSE file for full details.
 * Chandola et al. (2009) — Rule-based anomaly detection for interpretability
 * King, D.E. (2009) — dlib machine learning toolkit
 * Guo and Zhang (2019) — Survey on deep learning based face recognition
+
 <div align="center">
-```
  SmartDormX — Built with dedication at PAF-IAST
 Integrating Artificial Intelligence with Institutional Management
 ⭐ If this project helped you — please give it a star
 
 </div> 
-```
