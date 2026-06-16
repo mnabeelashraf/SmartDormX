@@ -103,6 +103,7 @@ SmartDormX delivers an end-to-end integrated platform with two core subsystems:
 ---
 
 ## 🏗️ System Architecture
+```
 ┌─────────────────────────────────────────────────────────────┐
 │ PRESENTATION LAYER │
 │ Admin Portal (HTML/CSS/JS) + Student Portal │
@@ -121,9 +122,10 @@ SmartDormX delivers an end-to-end integrated platform with two core subsystems:
 │ - dlib ResNet │ │ Supabase PostgreSQL (cloud) │
 │ - AnomalyDetector │ │ Local image storage (/images) │
 └─────────────────────┘ └──────────────────────────────────┘
-
+```
 
 ### End-to-End Recognition Flow
+```
 Camera Frame
 │
 ▼
@@ -151,7 +153,7 @@ SQLite Log Entry (5-second cooldown)
 │
 ▼
 MJPEG Stream → Admin Browser (3-second auto-refresh)
-
+```
 ---
 
 ## ✨ Key Features
@@ -468,6 +470,7 @@ SmartDormX uses a Hybrid Dual-Database Architecture:
 │                             │    │  • dashboard_alerts               │
 └─────────────────────────────┘    └──────────────────────────────────┘
 ```
+---
 ### 📡 API Reference
 
 |Endpoint |	Method |	Description |
@@ -481,7 +484,7 @@ SmartDormX uses a Hybrid Dual-Database Architecture:
 | /stats |	GET |	System statistics summary |
 | /user_image/<id> |	GET |	Retrieve student primary image |
 | /refresh_logs |	POST |	Force log refresh |
-
+---
 ### ⚡ Challenges and Solutions
 |Challenge |	Impact |	Solution Applied |
 |---|---|---| 
@@ -492,7 +495,7 @@ SmartDormX uses a Hybrid Dual-Database Architecture:
 |Continuous logging of same person|	Database flooding|	Implemented 5-second per-identity cooldown|
 |Student and admin portal DB integration|	Data not fully synchronized|	Identified for Version 2.0 development|
 |No liveness detection|	Spoofing vulnerability|	Documented for future implementation|
-
+---
 ### 🚀 Future Enhancements
 
 #### High Priority
@@ -516,39 +519,41 @@ SmartDormX uses a Hybrid Dual-Database Architecture:
 * Docker containerization for simplified deployment
 * Biometric data encryption (AES-256)
 * Web-based system configuration panel
-
+---
 ### 👥 Team
 | Name	| Roll Number	| Responsibility |
 |---|---|
 | Muhammad Nabeel Ashraf	| B22F1154CS030	| Face Recognition Module · Camera Integration · Anomaly Detection Engine |
 | Fahad Ali	| B22F0403CS046	| Hostel Management Dashboard · Database Design · Supabase Integration |
 | Muhammad Uzair Khan |	B22F0076CS092	| Student Portal Development · System Integration · Testing and Documentation |
-
+---
 ### 👨‍🏫 Supervisor
 Dr. Muhammad Shoaib Qureshi
 Assistant Professor
 School of Computing Sciences
 Pak-Austria Fachhochschule: Institute of Applied Sciences and Technology (PAF-IAST)
-
+---
 ### 🏛️ Institution
 Pak-Austria Fachhochschule: Institute of Applied Sciences and Technology
 Mang, Haripur, Khyber Pakhtunkhwa, Pakistan
 www.paf-iast.edu.pk
-
+---
 ### 📄 License
 This project is licensed under the MIT License.
 See the LICENSE file for full details.
-
+---
 ### 📚 Key References
 * Kortli et al. (2020) — HOG + deep learning encoder for CPU-efficient face recognition
 * Adjabi et al. (2020) — ResNet encoders outperform classical methods on LFW benchmark
 * Chandola et al. (2009) — Rule-based anomaly detection for interpretability
 * King, D.E. (2009) — dlib machine learning toolkit
 * Guo and Zhang (2019) — Survey on deep learning based face recognition
-
+---
 <div align="center">
  SmartDormX — Built with dedication at PAF-IAST
 Integrating Artificial Intelligence with Institutional Management
+ 
 ⭐ If this project helped you — please give it a star
 
 </div> 
+---
