@@ -449,10 +449,9 @@ SmartDormX/
 ├── LICENSE                         # MIT License
 └── README.md                       # This file
 ```
-🗄️ Database Architecture
+### 🗄️ Database Architecture
 SmartDormX uses a Hybrid Dual-Database Architecture:
-
-
+```
 ┌─────────────────────────────┐    ┌──────────────────────────────────┐
 │     SQLite (Local)          │    │    Supabase PostgreSQL (Cloud)    │
 │                             │    │                                   │
@@ -468,18 +467,22 @@ SmartDormX uses a Hybrid Dual-Database Architecture:
 │  event logging              │    │  • requests                       │
 │                             │    │  • dashboard_alerts               │
 └─────────────────────────────┘    └──────────────────────────────────┘
-📡 API Reference
-Endpoint	Method	Description
-/video_feed	GET	Live MJPEG camera stream
-/logs	GET	Recognition logs with filters
-/users	GET	All enrolled students
-/add_user	POST	Register student with images
-/delete_user/<id>	DELETE	Remove student from system
-/import_csv	POST	Bulk import students via CSV
-/stats	GET	System statistics summary
-/user_image/<id>	GET	Retrieve student primary image
-/refresh_logs	POST	Force log refresh
-⚡ Challenges and Solutions
+```
+### 📡 API Reference
+
+|Endpoint |	Method |	Description |
+|---------|--------|-------------|
+| /video_feed |	GET	| Live MJPEG camera stream |
+| /logs |	GET	| Recognition logs with filters |
+| /users |	GET | All enrolled students |
+| /add_user |	POST	| Register student with images |
+| /delete_user/<id> | DELETE |	Remove student from system |
+| /import_csv |	POST |	Bulk import students via CSV |
+| /stats |	GET |	System statistics summary |
+| /user_image/<id> |	GET |	Retrieve student primary image |
+| /refresh_logs |	POST |	Force log refresh |
+
+### ⚡ Challenges and Solutions
 Challenge	Impact	Solution Applied
 No GPU hardware available	Recognition speed 1–2 sec/face	Reduced resolution to 640×480, capped FPS
 Laptop webcam gave < 50% accuracy	System unusable for security	Switched to iPhone via USB → 81.0% accuracy
