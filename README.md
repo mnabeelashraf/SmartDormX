@@ -401,12 +401,13 @@ Expected output:
 ```
 ### Step 7 — Open the Frontend
 Use VS Code Live Server to serve the frontend.
-```
+
 | Portal	| URL |
+|--------|-----|
 | Admin Portal	| http://127.0.0.1:5500/frontend/sign-in.html |
 | Student Portal	| http://127.0.0.1:5500/student-portal/sign-in.html |
 | Flask API	| http://localhost:5000 |
-```
+
 ### 📁 Project Structure
 ```
 SmartDormX/
