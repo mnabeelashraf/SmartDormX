@@ -537,10 +537,13 @@ Pak-Austria Fachhochschule: Institute of Applied Sciences and Technology (PAF-IA
 Pak-Austria Fachhochschule: Institute of Applied Sciences and Technology
 Mang, Haripur, Khyber Pakhtunkhwa, Pakistan
 www.paf-iast.edu.pk
+
 ---
+
 ### 📄 License
 This project is licensed under the MIT License.
 See the LICENSE file for full details.
+
 ---
 ### 📚 Key References
 * Kortli et al. (2020) — HOG + deep learning encoder for CPU-efficient face recognition
@@ -548,6 +551,7 @@ See the LICENSE file for full details.
 * Chandola et al. (2009) — Rule-based anomaly detection for interpretability
 * King, D.E. (2009) — dlib machine learning toolkit
 * Guo and Zhang (2019) — Survey on deep learning based face recognition
+
 ---
 <div align="center">
  SmartDormX — Built with dedication at PAF-IAST
@@ -556,4 +560,3 @@ Integrating Artificial Intelligence with Institutional Management
 ⭐ If this project helped you — please give it a star
 
 </div> 
----
