@@ -353,7 +353,7 @@ MJPEG Stream → Admin Browser (3-second auto-refresh)
 ---
 
 ### Step 1 — Clone the Repository
-
+```bash
 git clone https://github.com/mnabeelashraf/SmartDormX.git
 cd SmartDormX
 Step 2 — Create Virtual Environment
@@ -369,30 +369,25 @@ dlib-19.22.99-cp310-cp310-win_amd64.whl
 
 Then install:
 
-Bash
 
 pip install path\to\dlib-19.22.99-cp310-cp310-win_amd64.whl
 Step 4 — Install All Dependencies
-Bash
 
 pip install -r requirements.txt
 Step 5 — Configure Supabase
 Open frontend/supabase-config.js and replace with your credentials:
 
-JavaScript
 
 const SUPABASE_URL = 'your-supabase-project-url';
 const SUPABASE_ANON_KEY = 'your-supabase-anon-key';
 Open student-portal/student-supabase-config.js and do the same.
 
 Step 6 — Start the Backend
-Bash
 
 cd backend
 python app.py
 Expected output:
 
-text
 
 [INFO] Starting Smart Hostel Management System - Version 6
 [INFO] Access frontend at http://localhost:5000
@@ -406,7 +401,6 @@ Admin Portal	http://127.0.0.1:5500/frontend/sign-in.html
 Student Portal	http://127.0.0.1:5500/student-portal/sign-in.html
 Flask API	http://localhost:5000
 📁 Project Structure
-text
 
 SmartDormX/
 │
@@ -449,7 +443,6 @@ SmartDormX/
 🗄️ Database Architecture
 SmartDormX uses a Hybrid Dual-Database Architecture:
 
-text
 
 ┌─────────────────────────────┐    ┌──────────────────────────────────┐
 │     SQLite (Local)          │    │    Supabase PostgreSQL (Cloud)    │
