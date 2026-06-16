@@ -563,6 +563,7 @@ See the LICENSE file for full details.
  
 > SmartDormX — Built with dedication at PAF-IAST 
 > Integrating Artificial Intelligence with Institutional Management
+> 
 > ⭐ If this project helped you — please give it a star
 
 </div> 
