@@ -519,19 +519,23 @@ SmartDormX uses a Hybrid Dual-Database Architecture:
 * Docker containerization for simplified deployment
 * Biometric data encryption (AES-256)
 * Web-based system configuration panel
+
 ---
 ### 👥 Team
+
 | Name	| Roll Number	| Responsibility |
 |---|---|
 | Muhammad Nabeel Ashraf	| B22F1154CS030	| Face Recognition Module · Camera Integration · Anomaly Detection Engine |
 | Fahad Ali	| B22F0403CS046	| Hostel Management Dashboard · Database Design · Supabase Integration |
 | Muhammad Uzair Khan |	B22F0076CS092	| Student Portal Development · System Integration · Testing and Documentation |
+
 ---
 ### 👨‍🏫 Supervisor
 Dr. Muhammad Shoaib Qureshi
 Assistant Professor
 School of Computing Sciences
 Pak-Austria Fachhochschule: Institute of Applied Sciences and Technology (PAF-IAST)
+
 ---
 ### 🏛️ Institution
 Pak-Austria Fachhochschule: Institute of Applied Sciences and Technology
@@ -539,7 +543,6 @@ Mang, Haripur, Khyber Pakhtunkhwa, Pakistan
 www.paf-iast.edu.pk
 
 ---
-
 ### 📄 License
 This project is licensed under the MIT License.
 See the LICENSE file for full details.
