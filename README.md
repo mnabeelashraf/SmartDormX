@@ -356,12 +356,14 @@ MJPEG Stream → Admin Browser (3-second auto-refresh)
 ```bash
 git clone https://github.com/mnabeelashraf/SmartDormX.git
 cd SmartDormX
-Step 2 — Create Virtual Environment
-Bash
+```
+### Step 2 — Create Virtual Environment
+```bash
 
 python -m venv fr_env_new
 fr_env_new\Scripts\activate
-Step 3 — Install dlib (Windows Critical Step)
+```
+### Step 3 — Install dlib (Windows Critical Step)
 dlib must be installed from a pre-compiled wheel on Windows with Python 3.10.
 
 Download the wheel file:
@@ -369,37 +371,42 @@ dlib-19.22.99-cp310-cp310-win_amd64.whl
 
 Then install:
 
-
+```bash
 pip install path\to\dlib-19.22.99-cp310-cp310-win_amd64.whl
-Step 4 — Install All Dependencies
-
+```
+### Step 4 — Install All Dependencies
+```
 pip install -r requirements.txt
-Step 5 — Configure Supabase
+```
+### Step 5 — Configure Supabase
 Open frontend/supabase-config.js and replace with your credentials:
 
-
+```
 const SUPABASE_URL = 'your-supabase-project-url';
 const SUPABASE_ANON_KEY = 'your-supabase-anon-key';
 Open student-portal/student-supabase-config.js and do the same.
-
-Step 6 — Start the Backend
-
+```
+### Step 6 — Start the Backend
+```
 cd backend
 python app.py
+```
 Expected output:
 
-
+```
 [INFO] Starting Smart Hostel Management System - Version 6
 [INFO] Access frontend at http://localhost:5000
 [INFO] Upload folder: .../backend/images
 [INFO] Bulk upload folder: .../backend/bulk_upload
-Step 7 — Open the Frontend
+```
+### Step 7 — Open the Frontend
 Use VS Code Live Server to serve the frontend.
 
-Portal	URL
-Admin Portal	http://127.0.0.1:5500/frontend/sign-in.html
-Student Portal	http://127.0.0.1:5500/student-portal/sign-in.html
-Flask API	http://localhost:5000
+Portal	| URL
+Admin Portal	| http://127.0.0.1:5500/frontend/sign-in.html
+Student Portal	| http://127.0.0.1:5500/student-portal/sign-in.html
+Flask API	| http://localhost:5000
+
 📁 Project Structure
 
 SmartDormX/
